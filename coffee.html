@@ -70,21 +70,21 @@
     //      }, 4000);
     // }
 
-    // let myImage = $('#coffee_image');
-    let myRevenueMessage = $('#revenue');
+    const myImage = $('#coffee_image');
+    const myRevenueMessage = $('#revenue');
 
-    $('#coffee_image').attr("src", "static/coffee_beans.jpg");
-    $('#coffee_image').on('click',makeCoffee);
+    myImage.attr("src", "static/coffee_beans.jpg");
+    myImage.on('click',makeCoffee);
 
     function makeCoffee() {
-        $('#coffee_image').attr("src","static/coffee_machine.jpg");
+        myImage.attr("src","static/coffee_machine.jpg");
         
         setTimeout(function() {
-            $('#coffee_image').attr("src", "static/coffee_mug.jpg");
+            myImage.attr("src", "static/coffee_mug.jpg");
          }, 1500);
 
          setTimeout(function() {
-            $('#coffee_image').attr("src", "static/coffee_beans.jpg");
+            myImage.attr("src", "static/coffee_beans.jpg");
          }, 4000);
     
     }
